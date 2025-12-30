@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./output.css">
 </head>
 <body>
-    <section class="">
+    <section>
       <header class="w-full lg:ml-30 max-w-300 flex items-center justify-between mb-8 py-4">
     <div class="flex items-center gap-2">
 <img src="./Лого (2).png" alt="">  
@@ -78,6 +78,75 @@
     </div>
 
   </div>
-</div></section>
+</div>
+</section>
+
+<section class="max-w-7xl mx-auto px-6 py-16 font-sans">
+  <div class="mb-10">
+    <h2 class="text-4xl font-extrabold text-[#1a1a1a] mb-4 leading-tight">
+      Онлайн-калькулятор <br> стоимости доставки товара
+    </h2>
+    <p class="text-gray-500 text-lg max-w-2xl">
+      Задайте необходимые параметры посылки, и калькулятор рассчитает приблизительную стоимость доставки вашей посылки из Англии.
+    </p>
+  </div>
+
+  <div class="bg-white rounded-3xl shadow-[0_10px_50px_rgba(0,0,0,0.05)] p-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 mb-10">
+      
+      <div class="flex flex-col border-b-2 border-gray-200 pb-2">
+        <label class="text-sm font-bold mb-2">Страна:</label>
+        <div class="flex items-center">
+          <span class="mr-2 text-gray-400">🌐</span>
+          <select class="w-full outline-none bg-transparent appearance-none cursor-pointer">
+            <option>Россия</option>
+          </select>
+          <span class="text-xs text-gray-400">▼</span>
+        </div>
+      </div>
+
+      <div class="flex flex-col border-b-2 border-gray-200 pb-2">
+        <label class="text-sm font-bold mb-2">Город:</label>
+        <div class="flex items-center">
+          <span class="mr-2 text-gray-400">🏢</span>
+          <input type="text" value="Москва" class="w-full outline-none bg-transparent">
+        </div>
+      </div>
+
+      <div class="flex flex-col border-b-2 border-gray-200 pb-2">
+        <label class="text-sm font-bold mb-2">Индекс:</label>
+        <div class="flex items-center">
+          <span class="mr-2 text-gray-400">📋</span>
+          <input type="text" placeholder="Введите индекс" class="w-full outline-none bg-transparent placeholder:text-gray-300">
+        </div>
+      </div>
+
+      <div class="flex flex-col border-b-2 border-gray-200 pb-2">
+        <label class="text-sm font-bold mb-2">Вес посылки:</label>
+        <div class="flex items-center">
+          <span class="mr-2 text-gray-400">⚖️</span>
+          <input type="text" value="0,5" class="w-full outline-none bg-transparent">
+        </div>
+      </div>
+
+      <div class="flex flex-col border-b-2 border-gray-200 pb-2">
+        <label class="text-sm font-bold mb-2">Дополнительные услуги:</label>
+        <div class="flex items-center">
+          <span class="mr-2 text-gray-400">📄</span>
+          <select class="w-full outline-none bg-transparent appearance-none cursor-pointer text-gray-400">
+            <option>Выберите услуги</option>
+          </select>
+          <span class="text-xs text-gray-400">▼</span>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="bg-[#00D97E] hover:bg-[#00c572] text-white px-10 py-4 rounded-full font-bold text-lg shadow-lg shadow-[#00D97E]/30 transition-all">
+      Рассчитать
+    </button>
+  </div>
+</section>
+
 </body>
 </html>

@@ -2,3 +2,7 @@
 .linear {
     background: linear-gradient(to right, #5B52A3, #40B8EA);
 }
+
+.inputborder {
+    border-bottom: 2px solid rgba(197, 197, 197, 0.833);
+}
